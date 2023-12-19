@@ -1,17 +1,10 @@
-import kivy 
+import kivy
 from kivy.app import App
-#from objects.class1 import PongApp
-from kivy.uix.widget import Widget
+from kivy.uix.label import Label
 
-
-class PongGame(Widget):
-    pass
-
-
-class PongApp(App):
+class MyApp(App):
     def build(self):
-        return PongGame()
-    
-PongApp().run()
+        return Label(text="Hello")
 
-
+if __name__ == "__main__":
+    MyApp().run()
