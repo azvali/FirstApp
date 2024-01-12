@@ -7,8 +7,7 @@ class HelloText(BoxLayout):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
         self.orientation = 'vertical'
-        self.add_widget(Label(text="Hello",
-                              font_size=64))
+        self.add_widget(Label(text="Hello", font_size=64))
 class SimpleApp(App):
     def build(self):
         return HelloText()
